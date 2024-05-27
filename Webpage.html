@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinod Kumar - Professional Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            width: 100%;
+            height: 60px; /* Adjust the height as needed */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header .contact-info {
+            display: flex;
+            align-items: center;
+        }
+
+        header .contact-info p {
+            margin: 0;
+            margin-left: 10px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: 2px solid transparent;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            cursor: pointer; /* Add cursor pointer */
+        }
+
+        .section:hover {
+            background-color: #f1f1f1;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adjust the shadow */
+            border-color: #2ecc71; /* Green color */
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .resume-button {
+            background-color: #2ecc71;
+            color: #7ccc27;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .resume-button:hover {
+            background-color: #e30707;
+        }
+
+        .neon-button {
+            background-color: transparent;
+            color: #e30707; /* Green color */
+            padding: 15px 30px;
+            font-size: 18px;
+            border: 2px solid #9e99a3; /* Green color */
+            border-radius: 60px;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .neon-button::before,
+        .neon-button::after {
+            content: '';
+            position: absolute;
+            top: -90%;
+            left: -50%;
+            width: 200%;
+            height: 300%;
+            background-color: rgba(181, 210, 32, 0.3); /* Semi-transparent green color */
+            border-radius: 150%;
+            transition: transform 0.5s ease;
+            z-index: -1;
+        }
+
+        .neon-button::before {
+            animation: pulse 2s linear infinite;
+        }
+
+        .neon-button:hover::before,
+        .neon-button:hover::after {
+            transform: scale(3);
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.5);
+            }
+            50% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0.5);
+            }
+        }
+
+        /* Add class for truncated text */
+        .truncated {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Add class to expand truncated text */
+        .expanded {
+            white-space: normal;
+            overflow: visible;
+            text-overflow: initial;
+        }
+
+        /* Style for ellipsis */
+        .ellipsis {
+            cursor: pointer;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Vinod Kumar</h1>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:vinodKumar@gmail.com">vinodKumar@gmail.com</a></p>
+            <p>Mobile: <a href="tel:+91 9949640238">+91 9949640238</a></p>
+        </div>
+    </header>
+
+    <a href="/path/to/your/resume.pdf" download="Vinod_Kumar_Resume.pdf" class="neon-button">Download Resume</a>
+
+    <div class="container">
+        <div class="section" onclick="toggleExpand('aboutMe')">
+            <h2>About Me</h2>
+            <p class="truncated" id="aboutMe">
+                As a Software Testing professional with 4+ years of experience in software testing, I bring technical expertise, industry knowledge, and problem-solving skills to any project. 
+                <br><br>
+                I am skilled in using a variety of testing frameworks and tools, including Selenium WebDriver, Java, TestNG, and API testing, as well as AWS, Postman, JIRA, and Rest Assured. I have a track record of delivering high-quality products in the Medical and Banking domains, and I am committed to driving efficiency gains and improving product quality.
+                <br><br>
+                I am also experienced in using Git and Bitbucket as version control systems, allowing for efficient collaboration and version management. With a collaborative and client-focused approach, I create effective test plans, identify defects, and implement new testing methodologies to ensure that software products meet the highest standards</p>
+        
+                **Domains Worked on **: Banking (Citi), Medical ( ZAIDYN™ | AI-powered cloud-native platform )
+
+<b> <br><br>Skills & Tools: </b><br><br>
+
+UI Automation -> Selenium WebDriver<br>
+Language -> Java<br>
+Framework(s) -> TestNG & Cucumber<br>
+SQL -> PostgreSQL<br>
+API -> Postman, Rest Assured<br>
+Cloud -> AWS<br>
+CI/CD -> TeamCity by JetBrains<br>
+git<br>
+Github & Bitbucket<br>
+Bug Logging & Tracking Tool(s) -> Jira, HP-QA/ALM<br>
+Others: HTML, XML, JSON, Confluence (Confluence) ... <br>
+            </div>
+
+        <div class="section" onclick="toggleExpand('experience')">
+            <h2>Professional Experience</h2>
+            <p class="truncated" id="experience">Insert your professional experience details here...</p>
+        </div>
+
+        <div class="section" onclick="toggleExpand('contactInfo')">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <p><a href="https://www.linkedin.com/in/yourlinkedin">LinkedIn: Vinod Kumar</a> <a href="https://www.linkedin.com/in/yourlinkedin">&#x1F517;</a></p>
+                <p><a href="https://github.com/yourgithub">GitHub: yourgithub</a> <a href="https://github.com/yourgithub">&#x1F4BB;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Vinod Kumar - All rights reserved</p>
+    </footer>
+
+    <script>
+        function toggleExpand(id)
